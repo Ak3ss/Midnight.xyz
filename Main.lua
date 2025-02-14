@@ -33,10 +33,10 @@ if not LPH_OBFUSCATED then
     SWG_Private = true
     SWG_Dev = false
     SWG_Version = "Free"
-    SWG_Title = 'Midnight<font color="rgb(38, 0, 255)">.xyz</font> %s - %s'
+    SWG_Title = 'Midnight<font color="rgb(166, 0, 255)">.xyz</font> %s - %s'
     SWG_ShortName = 'Free'
     SWG_FullName = 'free build'
-    SWG_FFA = true
+    SWG_FFA = false
 end;
 --- FABRICATED VALUES END!!!
 
@@ -431,6 +431,7 @@ cheat.EspLibrary = {}; LPH_NO_VIRTUALIZE(function()
     end
 
     local function calculateCornersSimple(head, hrp)
+        --[[
             auto head_position = roblox::WorldToScreen(vector3_sub(head.GetPartPosition(), { 0, -0.5, 0 }), dimensions, viewmatrix);
 			auto leg_position = roblox::WorldToScreen(vector3_sub(rootpart.GetPartPosition(), { 0, 3.5, 0 }), dimensions, viewmatrix);
             float height = leg_position.y - head_position.y;
@@ -453,6 +454,7 @@ cheat.EspLibrary = {}; LPH_NO_VIRTUALIZE(function()
 			        static_cast<int>(round(leg_position.y))
 			    } // down right corner
 			};
+        ]]
         local head_position = worldToScreen(head.Position - Vector3.yAxis * 0.5)
         local leg_position = worldToScreen(hrp.Position - Vector3.yAxis * 3.5)
         local headx, heady = head_position.X, head_position.Y

@@ -33,7 +33,7 @@ if not LPH_OBFUSCATED then
     SWG_Private = true
     SWG_Dev = false
     SWG_Version = "Free"
-    SWG_Title = 'Midnight<font color="rgb(38, 0, 255)">.xyz</font> %s - %s
+    SWG_Title = 'Midnight<font color="rgb(38, 0, 255)">.xyz</font> %s - %s'
     SWG_ShortName = 'Free'
     SWG_FullName = 'free build'
     SWG_FFA = true
